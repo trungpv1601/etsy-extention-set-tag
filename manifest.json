@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "js": ["js/jquery.min.js", "contentscript.js"],
+        "css": ["contentstyle.css"],
+        "matches": [ "*://www.etsy.com/*"],
+        "run_at": "document_end"
+    }],
+    "name": "Set tag",
+    "description": "Autdshor **",
+    "version": "1.0",
+
+    "icons": { "128": "icon.png" },
+    "permissions": [
+        "activeTab", "tabs"
+    ],
+    "browser_action":{"default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js", "js/jquery.min.js"],
+        "persistent": false
+    }
+}
+

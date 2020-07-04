@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8"/>
+        <title>
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <center>
+                    <h4>
+                        Main Action
+                    </h4>
+                </center>
+                <div class="col-xs-12">
+                    <button class="btn btn-primary btn-sm" type="button" id="btnReplaceForMug">
+                        Replace for Mug
+                    </button>
+                    <button class="btn btn-success btn-sm" type="button" id="btnExportCSVShop">
+                        Export CSV Shop
+                    </button>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <center>
+                    <h4>
+                        Title
+                    </h4>
+                </center>
+                <div class="col-xs-12">
+                    <div class="form-group" style="width:100%">
+                        <input type="text" value="" data-role="tagsinput" id="titleTags"/>
+                        <p class="help-block">
+                            Count:
+                            <span id="titleTagsCountChar">
+                                0
+                            </span>
+                            , Tags:
+                            <span id="titleTagsCount">
+                                0
+                            </span>
+                        </p>
+                    </div>
+                    <button class="btn btn-success btn-sm" type="button" id="btnCopy">
+                        <span class="glyphicon glyphicon-copy" aria-hidden="true">
+                        </span>
+                        COPY
+                    </button>
+                    <button class="btn btn-default btn-sm" type="button" id="btnClearTitle">
+                        Clear
+                    </button>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <center>
+                    <h4>
+                        Tags
+                    </h4>
+                </center>
+                <div class="col-xs-12">
+                    <div class="form-group" style="width:100%">
+                        <input type="text" value="" id="txtTag" data-role="tagsinput"/>
+                    </div>
+                    <button class="btn btn-success btn-sm" type="button" id="btnCopyTags">
+                        <span class="glyphicon glyphicon-copy" aria-hidden="true">
+                        </span>
+                        COPY
+                    </button>
+                    <button class="btn btn-default btn-sm" type="button" id="btnSet">
+                        SET
+                    </button>
+                    <!-- <button class="btn btn-primary btn-sm" type="button" id="btnGet"> GET</button> -->
+                    <button class="btn btn-default btn-sm" type="button" id="btnClear">
+                        Clear
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="col-xs-12">
+            </div>
+            <span id="txtLog">
+            </span>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-tagsinput.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/popup.js"></script>
+</body>
+</html>

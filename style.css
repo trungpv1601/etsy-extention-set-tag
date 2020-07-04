@@ -1,0 +1,15 @@
+body {
+    width: 800px;
+    padding: 10px;
+}
+#txtTag {
+    width: 100%;
+    min-height: 200px
+}
+#txtLog {
+    font-weight: bold;
+    color: chocolate;
+}
+.bootstrap-tagsinput {
+    width: 100%;
+}
